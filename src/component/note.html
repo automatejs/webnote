@@ -3,7 +3,7 @@
     @mousedown="onMouseDown()">
     <div class="flex-box flex-element flex-column relative-container">
         <div class="note-tlb flex-box" *note-pan>
-            <button class="fa fa-close btn" @click="$destroy()" *m-show="state.isEditing"></button>
+            <button class="fa fa-close btn" @click="close()" *m-show="state.isEditing"></button>
         </div>
         <textarea class="note-content flex-element" *m-model="props.model.content"></textarea>
         <div class="note-resize" *note-resize></div>

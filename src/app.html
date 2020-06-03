@@ -6,5 +6,5 @@
 </div>
 
 <div class="flex-element relative-container">
-    <note :model="note" *m-repeat="note in state.notes" @destroy="removeNote(note)"></note>
+    <note :model="note" *m-repeat="note in state.notes" @closed="removeNote(note)"></note>
 </div>

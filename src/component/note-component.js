@@ -14,7 +14,7 @@ class NoteComponent extends automate.Component {
         super();
         this.state.isEditing = false;
         this.props.model = null;
-        this.events.destroy = new automate.Message();
+        this.events.closed = new automate.Message();
         this.init();
     }
 
@@ -41,8 +41,12 @@ class NoteComponent extends automate.Component {
             this.props.model.zIndex = this.noteService.nextZIndex();
         }
     }
+
+    close() {
+        this.events.closed.fire();
+    }
     
     onDestroy() {
-        this.events.destroy.fire();
+        
     }
 }

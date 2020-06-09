@@ -1,7 +1,7 @@
 
 @automate.directive({
     namespace: 'webnote',
-    key: 'note-resize'
+    key: 'noteResize'
 })
 class NoteResize extends automate.Directive {
     constructor() {

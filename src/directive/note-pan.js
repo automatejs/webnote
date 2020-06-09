@@ -1,7 +1,7 @@
 
 @automate.directive({
     namespace: 'webnote',
-    key: 'note-pan'
+    key: 'notePan'
 })
 class NotePan extends automate.Directive {
     constructor() {
